@@ -24,11 +24,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thời tiết"
+        android:onClick="viewWeather"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
         android:textSize="15dp"
-        android:backgroundTint="@color/black"
-        android:textStyle="bold"/>
+
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/corona"
@@ -37,10 +39,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:textSize="15dp"
+        android:onClick="viewCorona"
         android:textStyle="bold"
         android:backgroundTint="@color/black"
         android:textColor="@color/white"
-        android:text="Corona"/>
+        android:text="Corona"
+        tools:ignore="OnClick" />
 
 
 </LinearLayout>

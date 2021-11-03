@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,10 +31,11 @@ public class WeatherActivity extends AppCompatActivity {
     EditText search;
     Button btSearch, btDays;
     TextView tvCity, tvCountry, tvDay, tvTemp, tvDescription, tvHumidity, tvCloud, tvWind;
-    ImageView icon;
+    ImageView imIcon;
+
     private final String url = "https://api.openweathermap.org/data/2.5/forecast";
     private final String appid = "433949589717ca433ae0129961126942&units=metric&lang=vi";
-    DecimalFormat df = new DecimalFormat("#.##");
+    DecimalFormat df = new DecimalFormat("#.#");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,36 +57,39 @@ public class WeatherActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonResponse = new JSONObject(response);
 
-                        String day = jsonResponse.getString("dt_txt");
+                        JSONArray jsonArrayList = jsonResponse.getJSONArray("list");
+                        JSONObject jsonObjectList = jsonArrayList.getJSONObject(0);
 
-
-                        JSONArray jsonArray = jsonResponse.getJSONArray("weather");
+                        JSONArray jsonArray = jsonObjectList.getJSONArray("weather");
                         JSONObject jsonObjectWeather = jsonArray.getJSONObject(0);
+
                         String description = jsonObjectWeather.getString("description");
                         String icon = jsonObjectWeather.getString("icon");
 
-                        JSONObject jsonObjectMain = jsonResponse.getJSONObject("main");
-                        double temp = jsonObjectMain.getDouble("temp") - 273.15;
+                        JSONObject jsonObjectMain = jsonObjectList.getJSONObject("main");
+                        double temp = jsonObjectMain.getDouble("temp");
                         int humidity = jsonObjectMain.getInt("humidity");
 
-                        JSONObject jsonObjectWind = jsonResponse.getJSONObject("wind");
+                        JSONObject jsonObjectWind = jsonObjectList.getJSONObject("wind");
                         String wind = jsonObjectWind.getString("speed");
 
-                        JSONObject jsonObjectClouds = jsonResponse.getJSONObject("clouds");
+                        JSONObject jsonObjectClouds = jsonObjectList.getJSONObject("clouds");
                         String clouds = jsonObjectClouds.getString("all");
 
-                        JSONObject jsonObjectSys = jsonResponse.getJSONObject("sys");
-                        String countryName = jsonObjectSys.getString("country");
-                        String cityName = jsonResponse.getString("name");
+                        JSONObject jsonArrayCity = jsonResponse.getJSONObject("city");
+                        String countryName = jsonArrayCity.getString("country");
+                        String cityName = jsonArrayCity.getString("name");
 
 
 
                         tvDescription.setText(description);
-                        tvDay.setText(day);
+                        tvDay.setText(icon);
+                        Picasso.get().load("http://openweathermap.org/img/wn/"+icon+"@2x.png").into(imIcon);
+//
                         tvTemp.setText(df.format(temp));
-                        tvHumidity.setText(df.format(humidity));
-                        tvWind.setText(wind);
-                        tvCloud.setText(clouds);
+                        tvHumidity.setText(df.format(humidity)+"%");
+                        tvWind.setText(wind+"Km/h");
+                        tvCloud.setText(clouds+"%");
                         tvCountry.setText(countryName);
                         tvCity.setText(cityName);
                     } catch (JSONException e) {
@@ -105,8 +110,8 @@ public class WeatherActivity extends AppCompatActivity {
 
     private void anhxa(){
         search = findViewById(R.id.search);
-        btSearch = findViewById(R.id.btSearch);
-        btDays = findViewById(R.id.btDays);
+//        btSearch = findViewById(R.id.btSearch);
+//        btDays = findViewById(R.id.btDays);
         tvCity = findViewById(R.id.city);
         tvCountry = findViewById(R.id.country);
         tvDay = findViewById(R.id.day);
@@ -115,7 +120,7 @@ public class WeatherActivity extends AppCompatActivity {
         tvHumidity = findViewById(R.id.humidity);
         tvCloud = findViewById(R.id.cloud);
         tvWind = findViewById(R.id.wind);
-        icon = findViewById(R.id.icon);
+        imIcon = findViewById(R.id.icon);
     }
 
 }
