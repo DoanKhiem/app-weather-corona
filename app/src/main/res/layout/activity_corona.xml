@@ -15,6 +15,7 @@
         android:textSize="35dp"
         android:textStyle="bold"
         android:layout_gravity="center"/>
+
     <LinearLayout
         android:layout_marginTop="30dp"
         android:gravity="center"
@@ -55,6 +56,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="150dp"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
@@ -72,11 +74,18 @@
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="20dp"
             android:text="Dân số: "/>
         <TextView
 
@@ -86,6 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
@@ -120,46 +130,6 @@
             android:text="Tổng số ca nhiễm: "/>
         <TextView
             android:id="@+id/cases"
-            android:textSize="20dp"
-            android:hint="1000"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textColor="#FF1100"
-            android:layout_marginLeft="20dp"
-            android:text="Số ca tử vong trong ngày: "/>
-        <TextView
-            android:id="@+id/todayDeaths"
-            android:textSize="20dp"
-            android:hint="1000"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textColor="#FF1100"
-            android:layout_marginLeft="20dp"
-            android:text="Tổng số ca tử vong: "/>
-        <TextView
-            android:id="@+id/deaths"
             android:textSize="20dp"
             android:hint="1000"
             android:layout_marginLeft="10dp"
@@ -201,6 +171,47 @@
             android:text="Tổng số ca phục hồi: "/>
         <TextView
             android:id="@+id/recovered"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FF1100"
+            android:layout_marginLeft="20dp"
+            android:text="Số ca tử vong trong ngày: "/>
+        <TextView
+            android:id="@+id/todayDeaths"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FF1100"
+            android:layout_marginLeft="20dp"
+            android:text="Tổng số ca tử vong: "/>
+        <TextView
+            android:id="@+id/deaths"
             android:textSize="20dp"
             android:hint="1000"
             android:layout_marginLeft="10dp"

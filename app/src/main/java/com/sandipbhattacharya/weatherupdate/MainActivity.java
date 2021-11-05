@@ -32,26 +32,10 @@ import org.json.JSONObject;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
-
-
-
-
-    Button weather, corona;
-
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        anhxa();
 
     }
     public void viewWeather(View view){
@@ -61,19 +45,5 @@ public class MainActivity extends AppCompatActivity {
     public void viewCorona(View view){
         Intent intent = new Intent(this, CoronaActivity.class);
         startActivity(intent);
-    }
-
-
-
-
-
-
-
-    private void anhxa(){
-
-
-
-
-
     }
 }

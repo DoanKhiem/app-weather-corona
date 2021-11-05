@@ -22,18 +22,77 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+
 public class CoronaActivity extends AppCompatActivity {
     EditText searchCorona;
     Button btSearchCorona;
     TextView tvCountryCorona, tvContinentCorona, tvPopulationCorona, tvTodayCasesCorona, tvCasesCorona, tvTodayDeathsCorona, tvDeathsCorona, tvTodayRecoveredCorona, tvRecoveredCorona;
     ImageView imFlag;
-    private final String urlCorona = "https://disease.sh/v3/covid-19/countries";
+    DecimalFormat df = new DecimalFormat("#,###");
 
+    private final String urlCorona = "https://disease.sh/v3/covid-19/countries";
+    private final String countrySearch = "Vietnam";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corona);
         anhxa();
+
+        viewData(urlCorona,countrySearch);
+    }
+
+    private void viewData(String urlCorona, String countrySearch) {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, urlCorona, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonArray = new JSONArray(response);
+
+                    for (int j=0; j < jsonArray.length(); j++){
+                        JSONObject jsonObjectList = jsonArray.getJSONObject(j);
+                        String country = jsonObjectList.getString("country");
+                        if (countrySearch.equals(country)){
+                            String cases = jsonObjectList.getString("cases");
+                            String todayCases = jsonObjectList.getString("todayCases");
+                            String deaths = jsonObjectList.getString("deaths");
+                            String todayDeaths = jsonObjectList.getString("todayDeaths");
+                            String recovered = jsonObjectList.getString("recovered");
+                            String todayRecovered = jsonObjectList.getString("todayRecovered");
+                            String population = jsonObjectList.getString("population");
+                            String continent = jsonObjectList.getString("continent");
+                            JSONObject jsoncountryInfo = jsonObjectList.getJSONObject("countryInfo");
+                            String flag = jsoncountryInfo.getString("flag");
+                            tvCountryCorona.setText(country);
+                            tvCasesCorona.setText(cases+" người");
+                            tvContinentCorona.setText(continent);
+                            tvTodayCasesCorona.setText(todayCases+" người");
+                            tvDeathsCorona.setText(deaths+" người");
+                            tvTodayDeathsCorona.setText(todayDeaths+" người");
+                            tvRecoveredCorona.setText(recovered+" người");
+                            tvTodayRecoveredCorona.setText(todayRecovered+" người");
+                            tvPopulationCorona.setText(population+" người");
+                            Picasso.get().load(flag).into(imFlag);
+                            break;
+
+                        }
+
+                    }
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener(){
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(), error.toString().trim(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(stringRequest);
     }
 
     private void anhxa() {
@@ -56,54 +115,7 @@ public class CoronaActivity extends AppCompatActivity {
         if(countrySearch.equals("")){
             searchCorona.setText("Nhập tên đất nước");
         }else{
-            StringRequest stringRequest = new StringRequest(Request.Method.GET, urlCorona, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    try {
-                        JSONArray jsonArray = new JSONArray(response);
-
-                        for (int j=0; j < jsonArray.length(); j++){
-                            JSONObject jsonObjectList = jsonArray.getJSONObject(j);
-                            String country = jsonObjectList.getString("country");
-                            if (countrySearch.equals(country)){
-                                String cases = jsonObjectList.getString("cases");
-                                String todayCases = jsonObjectList.getString("todayCases");
-                                String deaths = jsonObjectList.getString("deaths");
-                                String todayDeaths = jsonObjectList.getString("todayDeaths");
-                                String recovered = jsonObjectList.getString("recovered");
-                                String todayRecovered = jsonObjectList.getString("todayRecovered");
-                                String population = jsonObjectList.getString("population");
-                                JSONObject jsoncountryInfo = jsonObjectList.getJSONObject("countryInfo");
-                                String flag = jsoncountryInfo.getString("flag");
-                                tvCountryCorona.setText(country);
-                                tvCasesCorona.setText(cases);
-                                tvTodayCasesCorona.setText(todayCases);
-                                tvDeathsCorona.setText(deaths);
-                                tvTodayDeathsCorona.setText(todayDeaths);
-                                tvRecoveredCorona.setText(recovered);
-                                tvTodayRecoveredCorona.setText(todayRecovered);
-                                tvPopulationCorona.setText(population);
-                                Picasso.get().load(flag).into(imFlag);
-                                break;
-
-                            }
-
-                        }
-
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }, new Response.ErrorListener(){
-
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), error.toString().trim(), Toast.LENGTH_SHORT).show();
-                }
-            });
-            RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-            requestQueue.add(stringRequest);
+            viewData(urlCorona,countrySearch);
         }
     }
 
