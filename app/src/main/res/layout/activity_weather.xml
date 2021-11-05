@@ -27,7 +27,7 @@
             android:textColor="@color/white"
             android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
-            android:hint="Nhập địa chỉ tìm kiếm"
+            android:hint="Nhập thành phố tìm kiếm"
             android:textColorHint="@color/white"
             android:backgroundTint="#FFFFFF"/>
 
@@ -212,185 +212,176 @@
         </LinearLayout>
     </LinearLayout>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_marginTop="40dp"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:orientation="horizontal">
     <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#68BFBFBF">
-        <TextView
-            android:id="@+id/day1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="30/12"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="#68BFBFBF">
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/12"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
 
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34°"
-            android:id="@+id/temp1"
-            android:textColor="@color/white"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34°"
+                android:id="@+id/temp1"
+                android:textColor="@color/white"
 
-            android:layout_gravity="center"
-            android:textSize="22dp"/>
-        <ImageView
-            android:layout_width="60dp"
-            android:src="@drawable/a"
-            android:id="@+id/img1"
-            android:layout_height="60dp"
-            android:layout_gravity="center"/>
-        <TextView
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/a"
+                android:id="@+id/img1"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.5km/h"
+                android:textColor="@color/white"
+                android:id="@+id/wind1"
+                android:layout_gravity="center"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="34.5km/h"
-            android:textColor="@color/white"
-            android:id="@+id/wind1"
-            android:layout_gravity="center"
-            android:textSize="16dp"/>
+            android:orientation="vertical"
+            android:background="#68BFBFBF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/12"
+                android:id="@+id/day2"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34°"
+                android:id="@+id/temp2"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+            <ImageView
+                android:src="@drawable/a"
+                android:id="@+id/img2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.5km/h"
+                android:textColor="@color/white"
+                android:id="@+id/wind2"
+                android:layout_gravity="center"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="#68BFBFBF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/12"
+                android:id="@+id/day3"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34°"
+                android:id="@+id/temp3"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+            <ImageView
+                android:src="@drawable/a"
+                android:id="@+id/img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.5km/h"
+                android:textColor="@color/white"
+                android:id="@+id/wind3"
+                android:layout_gravity="center"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="#68BFBFBF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/12"
+                android:id="@+id/day4"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34°"
+                android:id="@+id/temp4"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+            <ImageView
+                android:src="@drawable/a"
+                android:id="@+id/img4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.5km/h"
+                android:textColor="@color/white"
+                android:id="@+id/wind4"
+                android:layout_gravity="center"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#68BFBFBF">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="30/12"
-            android:id="@+id/day2"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34°"
-            android:id="@+id/temp2"
-            android:textColor="@color/white"
-
-            android:layout_gravity="center"
-            android:textSize="22dp"/>
-        <ImageView
-            android:src="@drawable/a"
-            android:id="@+id/img2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34.5km/h"
-            android:textColor="@color/white"
-            android:id="@+id/wind2"
-            android:layout_gravity="center"
-            android:textSize="16dp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        android:background="#68BFBFBF">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="30/12"
-            android:id="@+id/day3"
-            android:textColor="@color/white"
-
-            android:layout_gravity="center"
-
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34°"
-            android:id="@+id/temp3"
-            android:textColor="@color/white"
-
-            android:layout_gravity="center"
-            android:textSize="22dp"/>
-        <ImageView
-            android:src="@drawable/a"
-            android:id="@+id/img3"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34.5km/h"
-            android:textColor="@color/white"
-            android:id="@+id/wind3"
-            android:layout_gravity="center"
-            android:textSize="16dp"/>
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_marginLeft="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        android:background="#68BFBFBF">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="30/12"
-            android:id="@+id/day4"
-            android:textColor="@color/white"
-
-            android:layout_gravity="center"
-
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34°"
-            android:id="@+id/temp4"
-            android:textColor="@color/white"
-
-            android:layout_gravity="center"
-            android:textSize="22dp"/>
-        <ImageView
-            android:src="@drawable/a"
-            android:id="@+id/img4"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="34.5km/h"
-            android:textColor="@color/white"
-            android:id="@+id/wind4"
-            android:layout_gravity="center"
-            android:textSize="16dp"/>
-
-    </LinearLayout>
-
-</LinearLayout>
-<!--    <Button-->
-<!--        android:id="@+id/btDays"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:background="@drawable/my_button_bg"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:text="Các ngày tiếp theo"/>-->
-
 </LinearLayout>
