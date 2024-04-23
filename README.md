@@ -1,1 +1,1 @@
-# Phát triển hệ thống thông tin enterprise(HK1-4)
+# Môn phát triển ứng dụng mạng (HK1-4)

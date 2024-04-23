@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="tamgiac" class="dh8c5.com.vd1.tamgiac"></bean>
+
+	<bean id="msgHello" class="dh8c5.com.vd1.msgHello">
+		<property name="msg" value="khiem"></property>
+	</bean>
+	
+	<bean id="triangle" class="dh8c5.com.vd1.triangle">
+		<constructor-arg value="can"></constructor-arg>
+		<constructor-arg value="20"></constructor-arg>
+	</bean>
+
+	<bean id="tamgiacdiem" class="dh8c5.com.vd1.tamgiacdiem">
+		<property name="pointA" ref="point0"></property>
+		<property name="pointB" ref="point1"></property>
+		<property name="pointC" ref="point2"></property>
+	</bean>
+
+	<bean id="point0" class="dh8c5.com.vd1.point">
+		<property name="x" value="0"></property>
+		<property name="y" value="0"></property>
+	</bean>
+
+	<bean id="point1" class="dh8c5.com.vd1.point">
+		<property name="x" value="1"></property>
+		<property name="y" value="0"></property>
+	</bean>
+
+	<bean id="point2" class="dh8c5.com.vd1.point">
+		<property name="x" value="1"></property>
+		<property name="y" value="1"></property>
+	</bean>
+
+	<bean id="listtamgiac" class="dh8c5.com.vd1.listtamgiac">
+		<property name="points">
+			<list>
+				<ref bean="point0"/>
+				<ref bean="point1"/>
+				<ref bean="point2"/>
+			</list>
+		</property>
+	</bean>
+</beans>
