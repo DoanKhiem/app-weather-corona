@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CoronaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thông tin Covid-19"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="700px"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập quốc gia tìm kiếm"/>
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm"
+            android:background="@drawable/my_button_bg"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/country"
+        android:textSize="25dp"
+        android:hint="Việt Nam"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/flag"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Khu vực: "/>
+        <TextView
+            android:id="@+id/continent"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="120dp"
+            android:text="Dân số: "/>
+        <TextView
+
+            android:id="@+id/population"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFE500"
+            android:layout_marginLeft="20dp"
+            android:text="Số ca nhiễm trong ngày: "/>
+        <TextView
+            android:id="@+id/todayCases"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFE500"
+            android:layout_marginLeft="20dp"
+            android:text="Tổng số ca nhiễm: "/>
+        <TextView
+            android:id="@+id/cases"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FF1100"
+            android:layout_marginLeft="20dp"
+            android:text="Số ca tử vong trong ngày: "/>
+        <TextView
+            android:id="@+id/todayDeaths"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FF1100"
+            android:layout_marginLeft="20dp"
+            android:text="Tổng số ca tử vong: "/>
+        <TextView
+            android:id="@+id/deaths"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#008EFF"
+            android:layout_marginLeft="20dp"
+            android:text="Số ca phục hồi trong ngày: "/>
+        <TextView
+            android:id="@+id/todayRecovered"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#008EFF"
+            android:layout_marginLeft="20dp"
+            android:text="Tổng số ca phục hồi: "/>
+        <TextView
+            android:id="@+id/recovered"
+            android:textSize="20dp"
+            android:hint="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
