@@ -1,0 +1,6 @@
+package com.hunre.khiem.springdemoannotations;
+
+public interface Coach {
+	public String getDailyWorkout();
+	public String getDailyFortune();
+}
