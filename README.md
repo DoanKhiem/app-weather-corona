@@ -1,1 +1,1 @@
-# cơ sở dũ liệu phân tán bằng (laravel - php)
+# Phát triển phần mềm hướng dịch vụ(HK1-4)
