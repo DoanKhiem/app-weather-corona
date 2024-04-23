@@ -1,1 +1,1 @@
-# app android api weather and corona
+# web lấy api thời tiết môn phát triển phần mềm hướng dịch vụ
