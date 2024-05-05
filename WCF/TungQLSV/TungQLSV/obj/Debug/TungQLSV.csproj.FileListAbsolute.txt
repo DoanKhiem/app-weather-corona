@@ -1,0 +1,14 @@
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\bin\TungQLSV.dll.config
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\bin\TungQLSV.dll
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\bin\TungQLSV.pdb
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\obj\Debug\TungQLSV.csproj.AssemblyReference.cache
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\obj\Debug\TungQLSV.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\obj\Debug\TungQLSV.dll
+C:\Users\Nguyen Bach Tung\source\repos\TungQLSV\TungQLSV\obj\Debug\TungQLSV.pdb
+D:\code\hunre\TungQLSV\TungQLSV\bin\TungQLSV.dll.config
+D:\code\hunre\TungQLSV\TungQLSV\bin\TungQLSV.dll
+D:\code\hunre\TungQLSV\TungQLSV\bin\TungQLSV.pdb
+D:\code\hunre\TungQLSV\TungQLSV\obj\Debug\TungQLSV.csproj.AssemblyReference.cache
+D:\code\hunre\TungQLSV\TungQLSV\obj\Debug\TungQLSV.csproj.CoreCompileInputs.cache
+D:\code\hunre\TungQLSV\TungQLSV\obj\Debug\TungQLSV.dll
+D:\code\hunre\TungQLSV\TungQLSV\obj\Debug\TungQLSV.pdb

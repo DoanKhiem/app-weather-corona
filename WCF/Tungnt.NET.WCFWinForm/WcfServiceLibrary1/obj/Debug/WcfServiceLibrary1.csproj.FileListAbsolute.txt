@@ -1,0 +1,14 @@
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csproj.AssemblyReference.cache
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

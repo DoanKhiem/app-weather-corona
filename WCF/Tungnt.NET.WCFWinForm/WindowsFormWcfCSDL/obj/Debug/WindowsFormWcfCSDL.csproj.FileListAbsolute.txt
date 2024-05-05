@@ -1,0 +1,20 @@
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.exe.config
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.exe
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.pdb
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.AssemblyReference.cache
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.Form1.resources
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.Properties.Resources.resources
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.GenerateResource.cache
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.exe
+C:\Users\Nguyen Bach Tung\source\repos\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.pdb
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.exe.config
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.exe
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\bin\Debug\WindowsFormWcfCSDL.pdb
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.Form1.resources
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.Properties.Resources.resources
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.exe
+C:\Users\Admin\Downloads\Tungnt.NET.WCFWinForm\WindowsFormWcfCSDL\obj\Debug\WindowsFormWcfCSDL.pdb

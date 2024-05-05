@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fbc7f61d-7956-426d-9463-e8a42f8ab8c7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost:44394/WCFServiceDemo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFServiceDemo.disco" MetadataType="Disco" ID="bec45ad7-001f-42a6-9e7b-3752d9f1997c" SourceId="1" SourceUrl="https://localhost:44394/WCFServiceDemo.svc?disco" />
+    <MetadataFile FileName="WCFServiceDemo.xsd" MetadataType="Schema" ID="8f444e2f-a6ef-47f2-9d91-6f5dd8e4e3f9" SourceId="1" SourceUrl="https://localhost:44394/WCFServiceDemo.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFServiceDemo1.xsd" MetadataType="Schema" ID="d58597de-b7f9-454a-9260-dd9ed435956a" SourceId="1" SourceUrl="https://localhost:44394/WCFServiceDemo.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFServiceDemo2.xsd" MetadataType="Schema" ID="0edbd52d-209f-4efe-af15-205b1f7b6bf6" SourceId="1" SourceUrl="https://localhost:44394/WCFServiceDemo.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFServiceDemo.wsdl" MetadataType="Wsdl" ID="681e4642-c0fd-44f0-b122-3723d8c1e84d" SourceId="1" SourceUrl="https://localhost:44394/WCFServiceDemo.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

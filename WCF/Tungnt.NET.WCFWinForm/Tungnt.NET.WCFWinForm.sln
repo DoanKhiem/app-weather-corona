@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungnt.NET.WCFWinForm", "Tungnt.NET.WCFWinForm\Tungnt.NET.WCFWinForm.csproj", "{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungnt.NET.WindowAppForm", "Tungnt.NET.WindowAppForm\Tungnt.NET.WindowAppForm.csproj", "{EF9BE227-C0F7-425D-8046-07ACE46FF7CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351} = {AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfServiceLibrary1\WcfServiceLibrary1.csproj", "{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormWcfCSDL", "WindowsFormWcfCSDL\WindowsFormWcfCSDL.csproj", "{04F1A635-C93C-434B-8860-9D2449780455}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D} = {A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACA8B0D-224D-4EE7-ACB7-BCB14CC54351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9BE227-C0F7-425D-8046-07ACE46FF7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9BE227-C0F7-425D-8046-07ACE46FF7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9BE227-C0F7-425D-8046-07ACE46FF7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9BE227-C0F7-425D-8046-07ACE46FF7CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E2B57E-D691-4F1F-BEFA-4562A1C4517D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F1A635-C93C-434B-8860-9D2449780455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F1A635-C93C-434B-8860-9D2449780455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F1A635-C93C-434B-8860-9D2449780455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F1A635-C93C-434B-8860-9D2449780455}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3614B7DE-DE68-44F9-9432-AE037316BCD0}
+	EndGlobalSection
+EndGlobal
