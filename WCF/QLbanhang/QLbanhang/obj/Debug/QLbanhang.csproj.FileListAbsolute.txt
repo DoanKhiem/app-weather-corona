@@ -1,0 +1,14 @@
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\bin\Debug\QLbanhang.dll.config
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\bin\Debug\QLbanhang.dll
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\bin\Debug\QLbanhang.pdb
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\obj\Debug\QLbanhang.csproj.AssemblyReference.cache
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\obj\Debug\QLbanhang.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\obj\Debug\QLbanhang.dll
+C:\Users\Nguyen Bach Tung\source\repos\QLbanhang\QLbanhang\obj\Debug\QLbanhang.pdb
+D:\QLbanhang\QLbanhang\bin\Debug\QLbanhang.dll.config
+D:\QLbanhang\QLbanhang\bin\Debug\QLbanhang.dll
+D:\QLbanhang\QLbanhang\bin\Debug\QLbanhang.pdb
+D:\QLbanhang\QLbanhang\obj\Debug\QLbanhang.csproj.AssemblyReference.cache
+D:\QLbanhang\QLbanhang\obj\Debug\QLbanhang.csproj.CoreCompileInputs.cache
+D:\QLbanhang\QLbanhang\obj\Debug\QLbanhang.dll
+D:\QLbanhang\QLbanhang\obj\Debug\QLbanhang.pdb
